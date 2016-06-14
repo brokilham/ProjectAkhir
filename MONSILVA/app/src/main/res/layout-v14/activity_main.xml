@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/background">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00786f"
+    android:layout_above="@+id/buttonGunung">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+
+     <ImageView
+         android:id="@+id/Logo"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/ic_launcher"/>
+
+     <TextView
+         android:id="@+id/NamaApp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:text="MONSILVA"
+         android:textStyle="bold"
+         android:textColor="#ff00453d"
+         android:layout_below="@+id/Logo"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Gunung"
+        android:src="@drawable/ic_menu_gunung"
+        android:id="@+id/buttonGunung"
+        android:layout_above="@+id/buttonPeringatanDini"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/menu_button_mountain"
+        android:textColor="#ffff"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Peralatan"
+        android:id="@+id/buttonPeralatan"
+        android:layout_alignTop="@+id/buttonGunung"
+        android:layout_toRightOf="@+id/buttonGunung"
+        android:layout_toEndOf="@+id/buttonGunung"
+        android:background="@drawable/menu_button_mountain"
+        android:textColor="#ffff"
+        android:src="@drawable/ic_menu_peralatan"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Peringatan Dini"
+        android:id="@+id/buttonPeringatanDini"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_button_mountain"
+        android:textColor="#ffff"
+        android:src="@drawable/ic_menu_peringatan_dini"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Survial Tips"
+        android:id="@+id/buttonSurvivalTips"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonPeringatanDini"
+        android:layout_toEndOf="@+id/buttonPeringatanDini"
+        android:background="@drawable/menu_button_mountain"
+        android:src="@drawable/ic_menu_survival_tips"
+        android:textColor="#ffff"/>
+
+</RelativeLayout>

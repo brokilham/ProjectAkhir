@@ -1,0 +1,355 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agung.ilham.monsilva.peralatan_kalkulator_peralatan_hasil_perhitungan"
+    android:background="#efefef">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+            <RelativeLayout
+                android:id="@+id/LayoutPeralatanAlatJahit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/LayoutTextHasilAlatJahit">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Rincian"
+                        android:id="@+id/TextHasilAlatJahit"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:background="#00786f"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilAlatJahit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Alat Jahit"
+                    android:id="@+id/NamaPeralatanAlatJahit"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/LayoutPeralatanAlatJahit"
+                android:id="@+id/LayoutPeralatanKomporLapangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff"
+                >
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/LayoutTextHasilKomporLapangan">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilKomporLapangan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilKomporLapangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kompor Lapangan"
+                    android:id="@+id/NamaPeralatanKomporLapangan"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/LayoutPeralatanKomporLapangan"
+            android:id="@+id/LayoutPeralatanBahanBakar"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LayoutTextHasilBahanBakar">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="0"
+                    android:id="@+id/TextHasilBahanBakar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_toRightOf="@+id/LayoutTextHasilBahanBakar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bahan Bakar"
+                android:id="@+id/NamaPeralatanBahanBakar"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/LayoutPeralatanBahanBakar"
+                android:id="@+id/LayoutPeralatanPenunjukArah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffff">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilPenunjukArah">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilPenunjukArah"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilPenunjukArah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Penunjuk Arah"
+                    android:id="@+id/NamaPeralatanP3K"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_below="@+id/LayoutPeralatanPenunjukArah"
+                android:id="@+id/LayoutPeralatanKorekApi"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilKorekApi">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilKorekApi"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilKorekApi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Korek Api"
+                    android:id="@+id/NamaPeralatanKorekApi"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/LayoutPeralatanMatras"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LayoutPeralatanKorekApi"
+                android:background="#ffff">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilMatras">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilMatras"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilMatras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Matras"
+                    android:id="@+id/NamaPeralatanMatras"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LayoutPeralatanNesting"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LayoutPeralatanMatras">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilNesting">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilNesting"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilNesting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Nesting"
+                    android:id="@+id/NamaPeralatanNesting"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/LayoutPeralatanPisau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LayoutPeralatanNesting"
+                android:background="#ffff">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilPisau">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilPisau"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilPisau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pisau"
+                    android:id="@+id/NamaPeralatanPisau"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/LayoutPeralatanTenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LayoutPeralatanPisau">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilTenda">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Rincian"
+                        android:id="@+id/TextHasilTenda"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:background="#00786f"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilTenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Tenda"
+                    android:id="@+id/NamaPeralatanTenda"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/LayoutPeralatanTrashBag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LayoutPeralatanTenda"
+                android:background="#ffff">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LayoutTextHasilTrashBag">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="0"
+                        android:id="@+id/TextHasilTrashBag"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/LayoutTextHasilTrashBag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Trash Bag"
+                    android:id="@+id/NamaPeralatanTrashBag"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+

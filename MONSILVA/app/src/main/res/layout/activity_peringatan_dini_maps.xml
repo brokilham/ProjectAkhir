@@ -1,0 +1,79 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    tools:context="com.agung.ilham.monsilva.peringatan_dini_maps"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="#00786f"
+        android:textColor="#ffff"
+        android:id="@+id/StatusGps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="#00786f"
+        android:text="12:00"
+        android:textColor="#ffff"
+        android:id="@+id/Time"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Jarak"
+        android:text="0 Meter"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/Time"
+        android:layout_toEndOf="@+id/Time"
+        android:background="#00786f"
+        android:textColor="#ffff"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="MULAI"
+            android:textColor="#ffff"
+            android:background="#00786f"
+            android:id="@+id/Mulai"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/WaktuMulai"
+            android:textColor="#ffff"
+            android:textSize="200dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

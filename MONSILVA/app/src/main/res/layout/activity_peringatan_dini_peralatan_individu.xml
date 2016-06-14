@@ -1,0 +1,163 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.agung.ilham.monsilva.peringatan_dini_peralatan_individu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:background="#efefef">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Gaiter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gaiter"
+                    android:onClick="onCheckboxClicked"/>
+                <CheckBox
+                    android:id="@+id/Headlamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Headlamp + Baterai Cadangan"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Gaiter"/>
+                <CheckBox
+                    android:id="@+id/Jaket_Gunung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jaket Gunung"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Headlamp"/>
+                <CheckBox
+                    android:id="@+id/Jam_Tangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jam Tangan"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Jaket_Gunung"/>
+                <CheckBox
+                    android:id="@+id/Jas_Hujan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jas Hujan/Ponco"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Jam_Tangan"/>
+                <CheckBox
+                    android:id="@+id/Kaos_Kaki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kaos Kaki"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Jas_Hujan"/>
+
+                <CheckBox
+                    android:id="@+id/Masker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masker"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Kaos_Kaki"/>
+
+                <CheckBox
+                    android:id="@+id/Pakaian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pakaian (kaos, celana panjang dan pendek)"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Masker"/>
+                <CheckBox
+                    android:id="@+id/Peralatan_Makan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peralatan makan"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Pakaian"/>
+                <CheckBox
+                    android:id="@+id/Peralatan_Mandi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peralatan Mandi"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Peralatan_Makan"/>
+                <CheckBox
+                    android:id="@+id/Sandal_Gunung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sandal Gunung"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Peralatan_Mandi"/>
+                <CheckBox
+                    android:id="@+id/Sarung_Tangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Satung Tangan"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Sandal_Gunung"/>
+                <CheckBox
+                    android:id="@+id/Sepatu_Hiking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sepatu Hiking"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Sarung_Tangan"/>
+                <CheckBox
+                    android:id="@+id/Sleeping_Bag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sleeping Bag"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Sepatu_Hiking"/>
+                <CheckBox
+                    android:id="@+id/Tas_Gunung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tas Gunung/carier + Rain Cover"
+                    android:onClick="onCheckboxClicked"
+                    android:layout_below="@+id/Sleeping_Bag"/>
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:id="@+id/buttonKembali"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="0dp"
+                android:background="@drawable/button_boarder"
+                android:textColor="#ffff"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selanjutnya"
+                android:id="@+id/buttonSelanjutnya"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/buttonKembali"
+                android:layout_toEndOf="@+id/buttonKembali"
+                android:layout_gravity="bottom"
+                android:layout_margin="0dp"
+                android:background="@drawable/button_boarder"
+                android:textColor="#ffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </RelativeLayout>

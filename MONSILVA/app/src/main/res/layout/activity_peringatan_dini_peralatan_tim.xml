@@ -1,0 +1,141 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.agung.ilham.monsilva.peringatan_dini_peralatan_tim"
+        android:background="#efefef">
+      <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/Alat_Jahit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alat Jahit (Jarum,Benang,peniti)"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                android:id="@+id/Kompor_Lapangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kompor Lapangan + Bahan Bakar"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Alat_Jahit"/>
+            <CheckBox
+                android:id="@+id/P3K"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="P3K"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Kompor_Lapangan"
+                android:listSelector="@drawable/listviewaction"/>
+            <CheckBox
+                android:id="@+id/Korek_Api"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Korek Api"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/P3K"/>
+            <CheckBox
+                android:id="@+id/Matras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Matras"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Korek_Api"/>
+            <CheckBox
+                android:id="@+id/Nesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nesting"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Matras"/>
+            <CheckBox
+                android:id="@+id/Pisau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pisau"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Nesting"/>
+            <CheckBox
+                android:id="@+id/Peralatan_Cuci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peralatan Cuci (Sabun,Sponge)"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Pisau"/>
+            <CheckBox
+                android:id="@+id/Penunjuk_Arah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penunjuk Arah (Peta,Gps,kompas)"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Peralatan_Cuci"/>
+            <CheckBox
+                android:id="@+id/Tenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tenda"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Penunjuk_Arah"/>
+            <CheckBox
+                android:id="@+id/Trash_Bag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trash Bag"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Tenda"/>
+
+            <CheckBox
+                android:id="@+id/Tempat_Air"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jerigen atau Water Bladder"
+                android:onClick="onCheckboxClicked"
+                android:layout_below="@+id/Trash_Bag"/>
+
+          </RelativeLayout>
+    </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:id="@+id/buttonKembali"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffff"
+                android:background="@drawable/button_boarder"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selanjutnya"
+                android:id="@+id/buttonSelanjutnya"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/buttonKembali"
+                android:layout_toEndOf="@+id/buttonKembali"
+                android:background="@drawable/button_boarder"
+                android:textColor="#ffff"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>

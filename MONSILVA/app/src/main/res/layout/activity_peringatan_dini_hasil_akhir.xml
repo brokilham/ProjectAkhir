@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agung.ilham.monsilva.peringatan_dini_hasil_akhir"
+    android:background="#efefef">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:id="@+id/LayoutInfoGunung"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/peringatan_dini_hasil_akhir_layout_atas"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nama Gunung"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:id="@+id/NamaGunungInfo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Kota Gunung"
+            android:id="@+id/KotaGunungInfo"
+            android:layout_below="@+id/NamaGunungInfo"
+            android:textColor="#fff"
+            android:paddingLeft="@dimen/activity_vertical_margin"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:id="@+id/LayoutRekomendasi"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/peringatan_dini_hasil_akhir_layout_bawah"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LayoutInfoGunung">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rekomendasi Pendakian"
+            android:id="@+id/RekomendasiPendakian"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/LayoutRekomendasi"
+        android:id="@+id/LayoutCuacaHariIni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/peringatan_dini_hasil_akhir_layout_atas">
+        <ImageView
+            android:id="@+id/imgCuacaHariIni"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/CuacaHariIni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cuaca Hari Ini"
+            android:layout_above="@+id/KeteranganCuacaHariIni"
+            android:layout_toRightOf="@+id/imgCuacaHariIni"
+            android:layout_toEndOf="@+id/imgCuacaHariIni"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/KeteranganCuacaHariIni"
+            android:layout_alignBottom="@+id/imgCuacaHariIni"
+            android:layout_toRightOf="@+id/imgCuacaHariIni"
+            android:layout_toEndOf="@+id/imgCuacaHariIni"
+           android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/SuhuMaxCuacaHariIni"
+            android:layout_above="@+id/KeteranganCuacaHariIni"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/SuhuMinCuacaHariIni"
+            android:layout_alignBottom="@+id/imgCuacaHariIni"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/SuhuMaxCuacaHariIni"
+            android:layout_alignLeft="@+id/SuhuMaxCuacaHariIni"
+            android:layout_alignStart="@+id/SuhuMaxCuacaHariIni"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:textColor="#fff"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/LayoutCuacaHariIni"
+        android:id="@+id/LayoutCuacaBesok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff00736a">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/CuacaBesok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cuaca Besok"
+            android:layout_above="@+id/KeteranganCuacaBesok"
+            android:layout_toRightOf="@+id/img"
+            android:layout_toEndOf="@+id/img"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/KeteranganCuacaBesok"
+            android:layout_alignBottom="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:layout_toEndOf="@+id/img"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/SuhuMaxBesok"
+            android:layout_above="@+id/KeteranganCuacaBesok"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/SuhuMinBesok"
+            android:layout_alignBottom="@+id/img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/SuhuMaxBesok"
+            android:layout_alignLeft="@+id/SuhuMaxBesok"
+            android:layout_alignStart="@+id/SuhuMaxBesok"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:textColor="#fff"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutStatusGunung"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00786f"
+        android:layout_below="@+id/LayoutCuacaBesok">
+
+        <ImageView
+            android:id="@+id/imgStatusGunung"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:id="@+id/StatusGunung"
+            android:text="Status Gunung"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgStatusGunung"
+            android:layout_toEndOf="@+id/imgStatusGunung"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutKondisiFisik"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LayoutStatusGunung"
+        android:background="#ff00736a">
+        >
+
+        <ImageView
+            android:id="@+id/imgKondisiFisik"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:id="@+id/KondisiFisik"
+            android:text="KondisiFisik"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imgKondisiFisik"
+            android:layout_toEndOf="@+id/imgKondisiFisik"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/KondisiFisik"
+            android:text="-"
+            android:id="@+id/JarakLari"
+            android:layout_toRightOf="@+id/imgKondisiFisik"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutKelengkapanPeralatan"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/peringatan_dini_hasil_akhir_layout_bawah2"
+        android:layout_below="@+id/LayoutKondisiFisik">
+
+        <ImageView
+            android:id="@+id/imgKelengkapanPeralatan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:id="@+id/KelengkapanPeralatan"
+            android:text="Kelengkapan Peralatan"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgKelengkapanPeralatan"
+            android:layout_toEndOf="@+id/imgKelengkapanPeralatan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+    </RelativeLayout>
+
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/progressBar"
+        app:mlpb_progress_stoke_width="3dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:id="@+id/buttonKembali"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffff"
+            android:background="@drawable/button_boarder"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:clickable="true"/>
+
+       </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CobaLagi"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/relativeLayout2" />
+
+</RelativeLayout>

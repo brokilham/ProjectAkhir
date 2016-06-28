@@ -1,0 +1,17 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 154 ciObject found
+ciMethod java/lang/String charAt (I)C 4097 1 6096 0 -1
+ciMethod java/nio/Buffer position (I)Ljava/nio/Buffer; 601 1 75 0 -1
+ciMethod java/lang/Character isSupplementaryCodePoint (I)Z 0 0 1 0 -1
+ciMethod java/lang/Character isSurrogate (C)Z 0 0 1 0 -1
+ciMethod java/lang/Character highSurrogate (I)C 0 0 1 0 -1
+ciMethod java/lang/Character lowSurrogate (I)C 0 0 1 0 -1
+ciMethod java/lang/Math min (II)I 3361 1 2654 0 -1
+ciMethod java/nio/ByteBuffer <init> (IIII[BI)V 177 1 22 0 -1
+ciMethod java/nio/ByteBuffer wrap ([BII)Ljava/nio/ByteBuffer; 0 0 1 0 -1
+ciMethod java/nio/ByteBuffer wrap ([B)Ljava/nio/ByteBuffer; 0 0 1 0 -1
+ciMethod java/nio/HeapByteBuffer <init> ([BII)V 0 0 1 0 -1
+ciMethod java/nio/charset/CharsetDecoder replacement ()Ljava/lang/String; 0 0 1 0 -1
+ciMethod 
